@@ -54,6 +54,8 @@ def parse_args():
 def pick_random(season, episode):
     if season is None:
         season = random.randint(1, 10)
+    if season not in SEASON_2_EPISODE:
+        return season, episode
     if episode is None:
         episode = random.randint(1, SEASON_2_EPISODE[season])
     return season, episode
