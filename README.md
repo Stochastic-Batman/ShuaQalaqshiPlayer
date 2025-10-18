@@ -2,11 +2,13 @@
 თუ შენც გიჭირს გადაწყვიტო, ჭამის დროს "შუა ქალაქის" რომელ სერიას უყურო, მაშინ ამ სკრიპტს მიენდე. ეს სკრიპტი მხოლოდ ლინუქსზე მუშაობს (შეიძლება macOS-ზეც).
 
 ## დაგჭირდება [mpv](https://mpv.io/) და YouTube API key; თუ არ გაქვს:
-1. mpv-ის ჩასაწერად გაუშვი `sudo apt install mpv -y`
-2. შექმენი Google Cloud პროექტი: https://console.cloud.google.com/.
-3. "YouTube Data API v3" ჩაურთე ამ პროექტს. მარცხენა ზედა კუთხეში Navigation Menu-დან: APIs & Services → Library → მოძებნე YouTube Data API v3 → Enable.
-4. შეიძლება იმავე გვერდზე ამოგიგდოს Key-ს შექმნის შესაძლებლობა, მაგრამ თუ არ ამოგიგდო, Navigation Menu-დან: APIs & Services → Enabled APIs & Services → Credentials → Create Credentials → API key.
-5. ტერმინალში გაუშვი: `export YOUTUBE_API_KEY="შენი_KEY"`
+1. mpv-ის ჩასაწერად:
+   - Debian-ზე დაფუძნებული ლინუქსის დისტრიბუციებისთვის გაუშვი: `sudo apt install mpv -y`
+   - macOS-ზე გაუშვი: `brew install mpv`
+3. შექმენი Google Cloud პროექტი: https://console.cloud.google.com/.
+4. "YouTube Data API v3" ჩაურთე ამ პროექტს. მარცხენა ზედა კუთხეში Navigation Menu-დან: APIs & Services → Library → მოძებნე YouTube Data API v3 → Enable.
+5. შეიძლება იმავე გვერდზე ამოგიგდოს Key-ს შექმნის შესაძლებლობა, მაგრამ თუ არ ამოგიგდო, Navigation Menu-დან: APIs & Services → Enabled APIs & Services → Credentials → Create Credentials → API key.
+6. ტერმინალში გაუშვი: `export YOUTUBE_API_KEY="შენი_KEY"`
 
 ## გამოყენების ინსტრუქცია
 თუ არც სეზონი არ აგირჩევია და არც სერია, მაშინ გაუშვი:
